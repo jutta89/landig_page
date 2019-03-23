@@ -65,6 +65,40 @@ $('.js-menu-list').find('a').click(function(e) {
     e.preventDefault();
     var section = $(this).attr('href');
     $('html, body').animate({
-        scrollTop: $(section).offset().top - 50
+        scrollTop: $(section).offset().top - 80
+    });
+});
+
+
+/* =============================================================================
+	VIDEO BANNER
+============================================================================= */
+
+// var vid = document.getElementById("js-bgvid");
+// var pauseButton = document.querySelector("#banner-video button");
+
+// if (window.matchMedia('(prefers-reduced-motion)').matches) {
+//     vid.removeAttribute("autoplay");
+//     vid.pause();
+//     pauseButton.innerHTML = "Paused";
+// }
+
+// function vidFade() {
+//     vid.classList.add("stopfade");
+// }
+
+// vid.addEventListener('ended', function() {
+//     vid.pause();
+//     vidFade();
+// }); 
+
+
+/* =============================================================================
+	FONT WEIGHT
+============================================================================= */
+
+$(function () {
+    $('.js-section-sec-nav-item').on('click', function () {
+        $(this).toggleClass('is-hovered');
     });
 });

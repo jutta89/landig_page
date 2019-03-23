@@ -28,6 +28,9 @@ section,
 summary {
   display: block; }
 
+section {
+  position: relative; }
+
 audio,
 canvas,
 progress,
@@ -58,6 +61,9 @@ abbr[title] {
 b,
 strong {
   font-weight: bold; }
+
+ul {
+  padding: 0; }
 
 dfn {
   font-style: italic; }
@@ -262,8 +268,6 @@ body.is-scrolled .site-top__menu-hld {
   width: 100%;
   height: 100vh;
   max-height: 840px;
-  background-image: url("../images/bg.png");
-  background-size: cover;
   overflow: hidden; }
 
 .l-wrapper {
@@ -276,6 +280,9 @@ body.is-scrolled .site-top__menu-hld {
 .l-section--first {
   padding-top: 120px;
   padding-bottom: 50px; }
+
+.l-section--second {
+  padding-bottom: 100px; }
 
 .section__col-hld {
   display: flex;
@@ -334,6 +341,60 @@ body.is-scrolled .site-top__menu-hld {
   margin-top: 65px;
   color: #c3136a; }
 
+/* =============================================================================
+	SECOND SECTION
+============================================================================= */
+.section--second__left {
+  width: 320px; }
+
+.section--second__right {
+  width: calc(100% - 320px); }
+
+.section--second__right-img-hld {
+  position: relative;
+  height: 100%;
+  max-height: 620px; }
+
+.section--second__right-img {
+  width: 100%;
+  height: 100%;
+  max-height: 620px;
+  object-fit: cover; }
+
+.section--second__right__content-hld {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 660px;
+  height: 330px;
+  padding: 30px 47px;
+  background: #fff;
+  box-shadow: 3px 0 16px rgba(0, 0, 0, 0.14); }
+
+.section--second-img {
+  display: block;
+  margin-top: 60px;
+  margin-left: -20px; }
+
+.section--second__nav .section--second__nav-item {
+  padding: 7px 0; }
+  .section--second__nav .section--second__nav-item a {
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .4s ease-in-out; }
+    .section--second__nav .section--second__nav-item a:hover, .section--second__nav .section--second__nav-item a.is-hovered {
+      color: #c3136a;
+      font-weight: 700; }
+
+.section--second__right__title {
+  margin-bottom: 15px;
+  color: #292e82;
+  font-size: 50px; }
+
 .c-col {
   float: left; }
   .c-col--flex {
@@ -378,6 +439,43 @@ body.is-scrolled .site-top__menu-hld {
   color: #fff;
   font-size: 30px;
   font-weight: 500; }
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("../images/bg.png") no-repeat;
+  background-size: cover;
+  transition: 1s opacity; }
+
+.stopfade {
+  opacity: .5; }
+
+.banner-video__nav {
+  position: absolute;
+  bottom: 20px; }
+
+#banner-video button {
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background; }
+
+#banner-video button:hover {
+  background: rgba(0, 0, 0, 0.5); }
 
 .site-top {
   position: absolute;
@@ -530,7 +628,7 @@ body.is-scrolled .site-top__menu-hld {
 .site-footer {
   display: inline-block;
   width: 100%;
-  margin: 0 0 -5px;
+  margin: 50px 0 -5px;
   padding: 90px 0 55px;
   float: none;
   background: #292e82; }
@@ -632,7 +730,15 @@ a {
     margin: 10px; }
   .l-section--first {
     padding-top: 90px;
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+  .section--second__right__title {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1200px) {
+  .section--second__right__content-hld {
+    position: relative;
+    max-width: 100%;
+    height: auto; } }
 
 @media screen and (max-width: 1024px) {
   .c-col {
@@ -657,7 +763,21 @@ a {
     width: 100%;
     text-align: center; }
   .site-footer__nav {
-    text-align: center; } }
+    text-align: center; }
+  .section--second__nav .section--second__nav-item {
+    text-align: center; }
+  .section--second-img {
+    margin: 40px auto; } }
+
+@media screen and (max-width: 640px) {
+  .section--first__title {
+    margin-bottom: 40px; }
+  .section--first__p {
+    margin: 40px 0; }
+  .banner__title {
+    font-size: 55px; }
+  .banner__title small {
+    font-size: 35px; } }
 
 @media screen and (max-width: 767px) {
   .section--first__box {
@@ -669,7 +789,11 @@ a {
   .section--first__box-text {
     margin-top: 25px;
     font-size: 18px;
-    text-align: center; } }
+    text-align: center; }
+  .l-section--banner {
+    background: url("../images/bg.png") #000 no-repeat center center; }
+  #bgvid {
+    display: none; } }
 
 @media screen and (max-width: 480px) {
   .site-top {

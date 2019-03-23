@@ -1,5 +1,6 @@
 $laptop-lg: 1600px;
 $laptop: 1400px;
+$laptop-sm: 1200px;
 $medium: 1024px;
 $medium-sm: 767px;
 $mobile: 640px;
@@ -54,8 +55,22 @@ $mobile-sm: 480px;
         padding-bottom: 40px;
     }
 
+
+    .section--second__right__title {
+        font-size: 30px;
+    }
+
 }
 
+@media screen and (max-width: $laptop-sm) {
+
+    .section--second__right__content-hld {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
 
 @media screen and (max-width: $medium) {
 
@@ -99,6 +114,34 @@ $mobile-sm: 480px;
         text-align: center;
     }
 
+    .section--second__nav .section--second__nav-item {
+        text-align: center;
+    }
+
+    .section--second-img {
+        margin: 40px auto;
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+
+    .section--first__title {
+        margin-bottom: 40px;
+    }
+
+    .section--first__p {
+        margin: 40px 0;
+    }
+
+    .banner__title {
+        font-size: 55px;
+    }
+
+    .banner__title small {
+        font-size: 35px;
+    }
+
 }
 
 @media screen and (max-width: $medium-sm) {
@@ -118,6 +161,14 @@ $mobile-sm: 480px;
         font-size: 18px;
         text-align: center;
     }
+
+    .l-section--banner { 
+        background: url('../images/bg.png') #000 no-repeat center center; 
+    }
+    
+	#bgvid { 
+		display: none; 
+	}
 
 }
 
