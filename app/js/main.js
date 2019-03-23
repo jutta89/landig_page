@@ -74,23 +74,23 @@ $('.js-menu-list').find('a').click(function(e) {
 	VIDEO BANNER
 ============================================================================= */
 
-// var vid = document.getElementById("js-bgvid");
-// var pauseButton = document.querySelector("#banner-video button");
+var vid = document.getElementById("js-bgvid");
+var pauseButton = document.querySelector("#banner-video button");
 
-// if (window.matchMedia('(prefers-reduced-motion)').matches) {
-//     vid.removeAttribute("autoplay");
-//     vid.pause();
-//     pauseButton.innerHTML = "Paused";
-// }
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}
 
-// function vidFade() {
-//     vid.classList.add("stopfade");
-// }
+function vidFade() {
+    vid.classList.add("stopfade");
+}
 
-// vid.addEventListener('ended', function() {
-//     vid.pause();
-//     vidFade();
-// }); 
+vid.addEventListener('ended', function() {
+    vid.pause();
+    vidFade();
+}); 
 
 
 /* =============================================================================
