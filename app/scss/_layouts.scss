@@ -1,0 +1,24 @@
+.l-section--banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 840px;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.l-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1620px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+
+.l-section--first {
+    padding-top: 120px;
+    padding-bottom: 50px;
+}

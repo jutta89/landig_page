@@ -1,0 +1,14 @@
+@mixin psa($top: false, $right: false, $bottom: false, $left: false) {
+    @if $top {
+    top: $top;
+    }
+    @if $right {
+    right: $right;
+    }
+    @if $bottom {
+    bottom: $bottom;
+    }
+    @if $left {
+        left: $left;
+    }
+}

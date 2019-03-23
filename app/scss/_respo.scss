@@ -1,0 +1,218 @@
+$laptop-lg: 1600px;
+$laptop: 1400px;
+$medium: 1024px;
+$medium-sm: 767px;
+$mobile: 640px;
+$mobile-sm: 480px;
+
+
+
+@media screen and (max-width: $laptop-lg) {
+
+    .site-top__menu-hld .menu {
+        right: 40px;
+
+        .is-scrolled & {
+            right: 0;
+        }
+    }
+
+    .site-top__menu-hld .text {
+        margin-left: -165px;
+    }
+
+}
+
+@media screen and (max-width: $laptop) {
+
+    .c-col-1-3 {
+        width: 100%;
+    }
+
+    .c-col-2-3 {
+        width: 100%;
+    }
+
+    .section--first__col-hld {
+        flex-direction: column;
+    }
+
+    .section--first__col-right {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px 0;
+    }
+
+    .section--first__box-1,
+    .section--first__box-2,
+    .section--first__box-3  {
+        margin: 10px;
+    }
+
+    .l-section--first {
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: $medium) {
+
+    .c-col {
+        width: 100%;
+    }
+
+    .section__col-hld,
+    .site-footer__col-hld {
+        flex-direction: column;
+    }
+
+    .site-footer {
+        padding: 50px 0 20px;
+    }
+
+    .site-footer__col {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .site-footer__img-hld {
+        margin-top: 30px;
+    }
+
+    .site-footer__logo-hld,
+    .site-footer__img-hld {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .site-footer__title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .site-footer__nav {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: $medium-sm) {
+
+    .section--first__box {
+        width: 295px;
+        min-width: 295px;
+        height: 325px;
+    }
+
+    .section__box-img {
+        width: 50%;
+    }
+
+    .section--first__box-text {
+        margin-top: 25px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: $mobile-sm) {
+
+    .site-top {
+        transform: translateY(20px);
+    }
+
+    .site-top__logo-hld {
+        position: absolute;
+        margin: auto;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 150px;
+        .site-top--scroll & {
+            top: 9px;
+            left: 10px;
+            right: auto;
+            width: 100px;
+        }
+    }
+
+    .site-top__menu-hld {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        .text {
+            display: none;
+        }
+    }
+
+    .menu-fixed {
+        top: 0;
+        right: 20px;
+    }
+
+    .l-section--banner {
+        height: 65vh;
+        min-height: 400px;
+    }
+
+    .banner__title-hld {
+        width: 100%;
+    }
+
+    .banner__title {
+        font-size: 35px;
+        text-align: center;
+        small {
+            font-size: 25px;
+        }
+    }
+
+    .banner__title-up {
+        display: inline-block;
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .site-footer__col-1 {
+        min-width: 100%;
+    }
+
+    .site-footer__img-hld {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-footer__img-link,
+    .site-footer__img-link:first-child {
+        margin: 5px;
+    }
+
+    .section--first__title {
+        margin-bottom: 30px;
+    }
+    .section--first__p {
+        margin: 30px 0;
+    }
+
+    .l-section--first {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .t-content {
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+}

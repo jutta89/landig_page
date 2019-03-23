@@ -1,0 +1,12 @@
+[data-aos='FadeUP'] {
+    opacity: 0;
+    transform: translateY(25px);
+    transition-duration: 1.3s;
+    transition-property: opacity, transform;
+    transition-timing-function: cubic-bezier(0.6, 0.2, 0.1, 1);
+    &.aos-animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

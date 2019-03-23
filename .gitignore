@@ -1,0 +1,11 @@
+/node_modules
+/npm-debug.log
+/node_modules/*
+node_modules/*
+/cache
+*.DS_store*
+*/.DS_store
+._.DS_store
+*DS_store*
+._*
+*/**/._*

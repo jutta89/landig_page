@@ -1,0 +1,52 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: $c-white;
+	font-size: 14px;
+	font-family: $font-std;
+	letter-spacing: 0;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+
+.is-visible,
+%is-visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+.is-hidden,
+%is-hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+%underline-hover {
+	&:after {
+		@extend %is-visible;
+		opacity: 1;
+		transform: translateY(1px);
+	}
+}
+
+%underline {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 1px;
+		background-color: $c-white;
+		opacity: 0;
+		transform: translateY(5px);
+		transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+	}
+	&:hover {
+		@extend %underline-hover;
+	}
+}

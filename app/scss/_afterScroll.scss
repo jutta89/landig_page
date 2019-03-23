@@ -1,0 +1,16 @@
+body.is-scrolled {
+    .site-top--scroll {
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 51;
+        background: $c-accent-2;
+    }
+
+    .site-top__menu-hld {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 40;
+    }
+
+}

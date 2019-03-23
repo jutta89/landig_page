@@ -1,0 +1,35 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joanna Kaczmarek",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.7.12",
+    "del": "^2.0.2",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.0.4",
+    "run-sequence": "^1.1.2"
+  },
+  "dependencies": {
+    "ansi-colors": "^3.2.4",
+    "aos": "^3.0.0-beta.6",
+    "duplexify": "^4.0.0",
+    "gulp": "^3.9.0",
+    "jquery": "^3.3.1",
+    "path-dirname": "^1.0.2",
+    "semantic-ui": "^2.4.2",
+    "sparkles": "^1.0.1"
+  }
+}
